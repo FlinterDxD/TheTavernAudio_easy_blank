@@ -1159,7 +1159,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288503053}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2955,6 +2955,7 @@ GameObject:
   - component: {fileID: 613997993}
   - component: {fileID: 613997990}
   - component: {fileID: 613997989}
+  - component: {fileID: 613997994}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3124,6 +3125,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &613997994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5662db7a78ed10944a62b27bb1056215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsEvent:
+    Guid:
+      Data1: -366503393
+      Data2: 1253424611
+      Data3: 95733681
+      Data4: -1192345365
+    Path: event:/FootStepsEvent
+  jumpEvent:
+    Guid:
+      Data1: -535451182
+      Data2: 1208312243
+      Data3: -1414037104
+      Data4: -1415265781
+    Path: event:/JumpLanding
+  landEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,9 +4190,9 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.72
+  OverrideMaxDistance: 2.3935194
 --- !u!135 &974109492
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4187,7 +4221,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974109490}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

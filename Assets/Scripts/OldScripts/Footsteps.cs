@@ -24,6 +24,7 @@ public class Footsteps : MonoBehaviour
     private void Start()
     {
         distToGround = GetComponent<Collider>().bounds.extents.y;
+        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
     }
 
     private void Update()
@@ -67,7 +68,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
