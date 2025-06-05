@@ -91,7 +91,7 @@ public class Doors : MonoBehaviour, IInteractable
     {
         RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
 
-        if (roomAmbient.ambientActivated == true && doorsOpened == false)
+        if (doorsOpened == false)
         {
             Debug.Log("im in!");
             InsideRoom = FMODUnity.RuntimeManager.CreateInstance(insideRoomSnap);
@@ -99,7 +99,7 @@ public class Doors : MonoBehaviour, IInteractable
         }
         else
         {
-            if (roomAmbient.ambientActivated == true && doorsOpened == true)
+            if (doorsOpened == true)
             {
                 Debug.Log("it works");
                 InsideRoom.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

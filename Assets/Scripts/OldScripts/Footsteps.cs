@@ -76,7 +76,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
@@ -84,7 +84,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
@@ -92,7 +92,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
@@ -100,7 +100,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
@@ -108,7 +108,7 @@ public class Footsteps : MonoBehaviour
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
