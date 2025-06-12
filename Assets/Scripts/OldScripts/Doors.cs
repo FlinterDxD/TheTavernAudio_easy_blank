@@ -11,6 +11,8 @@ public class Doors : MonoBehaviour, IInteractable
     bool doorsOpened = true;
     bool isRotating = false;
 
+    [SerializeField] Collider roomCollider;
+
     ////////////////// FMOD Section ///////////////////
 
     // Door's sample //
@@ -90,8 +92,19 @@ public class Doors : MonoBehaviour, IInteractable
     void RoomsSnap()
     {
         RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
+        if (Physics.CheckBox(roomCollider.bounds.center, roomCollider.bounds.extents,Quaternion.identity,LayerMask.GetMask("Player")) && !doorsOpened)
+        {
+            InsideRoom = FMODUnity.RuntimeManager.CreateInstance(insideRoomSnap);
+            InsideRoom.start();
+        }
+        else
+        {
+            Debug.Log("it works");
+            InsideRoom.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            InsideRoom.release();
+        }
 
-        if (doorsOpened == false)
+        /*if (doorsOpened == false)
         {
             Debug.Log("im in!");
             InsideRoom = FMODUnity.RuntimeManager.CreateInstance(insideRoomSnap);
@@ -105,7 +118,7 @@ public class Doors : MonoBehaviour, IInteractable
                 InsideRoom.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 InsideRoom.release();
             }
-        }
+        }*/
     }
 
     void DoorsInteract()

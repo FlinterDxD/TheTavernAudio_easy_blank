@@ -104,11 +104,19 @@ public class Footsteps : MonoBehaviour
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
+            else if (hit.collider.tag == "Bad")
+            {
+                FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
+                FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
+                FootstepsSound.start();
+                FootstepsSound.release();
+            }
             else
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);
                 FootstepsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
-                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
+                FootstepsSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
@@ -130,32 +138,38 @@ public class Footsteps : MonoBehaviour
                     //Debug.Log(hit.collider.tag);
                     if (hit.collider.CompareTag("Stone"))
                     {
-                        JumpSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        JumpSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
                     else if (hit.collider.CompareTag("Wood"))
                     {
-                        JumpSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        JumpSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_stone"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_wood"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
-                    else if (hit.collider.CompareTag("Bed"))
+                    else if (hit.collider.CompareTag("Bad"))
                     {
-                        JumpSound.setParameterByNameWithLabel("Footsteps_surface", "Bed");
+                        JumpSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
                     else
                     {
-                        JumpSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        JumpSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
+                        JumpSound.setParameterByNameWithLabel("JumpLandParam", "IsNotLanded");
                         JumpSound.start();
                     }
                 }
@@ -190,32 +204,38 @@ public class Footsteps : MonoBehaviour
                     //Debug.Log("Hit object tag: " + hit.collider.tag);
                     if (hit.collider.CompareTag("Stone"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
                     else if (hit.collider.CompareTag("Wood"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_stone"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Stone");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_wood"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Wood");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
-                    else if (hit.collider.CompareTag("Bed"))
+                    else if (hit.collider.CompareTag("Bad"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Bed");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
                     else
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("FootSwitcher", "Bad");
+                        LandSound.setParameterByNameWithLabel("JumpLandParam", "IsLanded");
                         LandSound.start();
                     }
                 }

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 120
+  controlID: 135
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 25
+  controlID: 17
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,10 +337,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ae5d0000
-      m_LastClickedID: 23982
-      m_ExpandedIDs: 6cf8ffff02f9ffffb0f9ffff16faffff1afaffff305d0000ae5d0000
+      scrollPos: {x: 0, y: 120}
+      m_SelectedIDs: 18f9ffff
+      m_LastClickedID: -1768
+      m_ExpandedIDs: 5cf8ffff7cf8ffff86f8fffff0f8ffff18f9ffff9cf9ffff02faffff1afaffff325d0000b05d0000aa5e0000b05e0000985f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FMODMySounds/MyFMODProject2
+    - Assets/Scripts/OldScripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e200000
     m_LastClickedID: 8206
-    m_ExpandedIDs: 00000000fc660000fe66000000670000026700000467000006670000086700000a670000
+    m_ExpandedIDs: 000000000a6700000c6700000e67000010670000126700001467000016670000186700001a6700001c6700001e670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,18 +501,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000fc660000fe66000000670000026700000467000006670000086700000a67000038670000e6780000e8780000
+    m_ExpandedIDs: ffffffff000000000a6700000c6700000e670000106700001267000016670000186700001c670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: BedTrigger
-      m_OriginalName: BedTrigger
+      m_Name: Doors
+      m_OriginalName: Doors
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 4094
+      m_UserData: 5232
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -985,9 +985,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 389.46405, y: 11.370622, z: 317.77252}
+    m_Target: {x: 391.01294, y: 8.09155, z: 310.39188}
     speed: 2
-    m_Value: {x: 389.46405, y: 11.370622, z: 317.77252}
+    m_Value: {x: 391.01294, y: 8.09155, z: 310.39188}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1033,13 +1033,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.052661456, y: -0.39231715, z: 0.022538926, w: 0.9181086}
+    m_Target: {x: -0.0441484, y: 0.94928956, z: -0.27070916, w: -0.15450157}
     speed: 2
-    m_Value: {x: 0.052658368, y: -0.39229414, z: 0.022537604, w: 0.91805476}
+    m_Value: {x: -0.044142798, y: 0.94916904, z: -0.2706748, w: -0.15448196}
   m_Size:
-    m_Target: 3.615654
+    m_Target: 4.484498
     speed: 2
-    m_Value: 3.615654
+    m_Value: 4.484498
   m_Ortho:
     m_Target: 0
     speed: 2

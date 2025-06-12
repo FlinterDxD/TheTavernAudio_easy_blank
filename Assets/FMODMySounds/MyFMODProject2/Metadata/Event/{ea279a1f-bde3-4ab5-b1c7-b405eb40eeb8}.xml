@@ -5,7 +5,7 @@
 			<value>FootStepsEvent</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{da10df8f-b79e-4292-882a-f8c67b9c2adc}</destination>
@@ -225,7 +225,6 @@
 		<relationship name="effects">
 			<destination>{8924a5b1-19f5-4f42-bb39-b64c9a3f251f}</destination>
 			<destination>{723f5fcb-0004-4ccb-9a87-833084db95d3}</destination>
-			<destination>{0dda3332-b34c-4c88-a89f-ee5ac11f3b7d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c8e580ea-4a27-4639-b36b-bbacb9e371d6}" />
@@ -406,7 +405,6 @@
 	<object class="MixerBusPanner" id="{e3b5fbe2-c5eb-4858-a8ee-ecaa3c064f68}" />
 	<object class="SFXReverbEffect" id="{8924a5b1-19f5-4f42-bb39-b64c9a3f251f}" />
 	<object class="MixerBusFader" id="{723f5fcb-0004-4ccb-9a87-833084db95d3}" />
-	<object class="SpatialiserEffect" id="{0dda3332-b34c-4c88-a89f-ee5ac11f3b7d}" />
 	<object class="MixerBusFader" id="{4884211c-41d3-485e-8c50-e5ea4e03b9b3}" />
 	<object class="MixerBusFader" id="{9f622e0a-aad1-4904-97e8-93ce6a67c09d}" />
 	<object class="MixerBusFader" id="{8ce2c4eb-5b61-4ff7-9366-f8758dfbe4be}" />

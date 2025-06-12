@@ -28,6 +28,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 750
+--- !u!114 &-4104535523370423848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Health
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Health
+  Guid:
+    Data1: -524514075
+    Data2: 1112568800
+    Data3: -621774973
+    Data4: 1138475761
+  Banks:
+  - {fileID: 4956223732110606403}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-3842197309203321614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +111,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 806
+--- !u!114 &-2019192944007382262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/RoomInside
+  m_EditorClassIdentifier: 
+  Path: snapshot:/RoomInside
+  Guid:
+    Data1: -386208272
+    Data2: 1292102880
+    Data3: 281346965
+    Data4: 88119746
+  Banks:
+  - {fileID: 4956223732110606403}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-928965601148972335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,13 +188,15 @@ MonoBehaviour:
   - {fileID: -928965601148972335}
   - {fileID: -3519788085838650901}
   - {fileID: 3324135266342951885}
-  - {fileID: 6581933664559312496}
+  - {fileID: 1744352165074219015}
+  - {fileID: -4104535523370423848}
+  - {fileID: -2019192944007382262}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4956223732110606403}
   StringsBanks:
   - {fileID: 114363042054662778}
-  cacheTime: 638847155591072688
+  cacheTime: 638853195873303496
   cacheVersion: 131617
 --- !u!114 &114363042054662778
 MonoBehaviour:
@@ -157,10 +213,10 @@ MonoBehaviour:
   Path: Assets/FMODMySounds/MyFMODProject2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638847155591072688
+  lastModified: 638853195873303496
   FileSizes:
   - Name: Desktop
-    Value: 1408
+    Value: 1702
   Exists: 1
 --- !u!114 &1372834680130187498
 MonoBehaviour:
@@ -188,6 +244,33 @@ MonoBehaviour:
   - Open
   - Close
   Exists: 1
+--- !u!114 &1744352165074219015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Outside
+  Guid:
+    Data1: 28187560
+    Data2: 1220530386
+    Data3: 1542584470
+    Data4: -2011959844
+  Banks:
+  - {fileID: 4956223732110606403}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2977020542233813329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,10 +367,10 @@ MonoBehaviour:
   Path: Assets/FMODMySounds/MyFMODProject2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638847155591052689
+  lastModified: 638853195873278434
   FileSizes:
   - Name: Desktop
-    Value: 6193312
+    Value: 6195872
   Exists: 1
 --- !u!114 &5681026237486671974
 MonoBehaviour:
@@ -310,40 +393,13 @@ MonoBehaviour:
   Banks:
   - {fileID: 4956223732110606403}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters:
   - {fileID: 2977020542233813329}
   MinDistance: 1
   MaxDistance: 20
   Length: 530
---- !u!114 &6581933664559312496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Reverb
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Reverb
-  Guid:
-    Data1: -386208272
-    Data2: 1292102880
-    Data3: 281346965
-    Data4: 88119746
-  Banks:
-  - {fileID: 4956223732110606403}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &7025218976625544109
 MonoBehaviour:
   m_ObjectHideFlags: 0
