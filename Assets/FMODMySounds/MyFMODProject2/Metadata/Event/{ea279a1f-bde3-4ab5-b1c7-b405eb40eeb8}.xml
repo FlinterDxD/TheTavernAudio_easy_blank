@@ -51,6 +51,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{2b85d656-3ac3-4953-8bfc-df6838d703bc}">
+		<relationship name="masters">
+			<destination>{674242c7-0d85-4d18-95e2-ac1c96dee2be}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{64fd5a84-96fa-46a6-ab3f-c2c1d60269b7}</destination>
 		</relationship>
@@ -123,6 +126,9 @@
 		<property name="length">
 			<value>0.32470833333333332</value>
 		</property>
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{5ff90ea0-3e22-425c-b832-432e7fb5ee53}</destination>
 			<destination>{939018e9-b353-4ad8-9e0d-3d55c5df2b1a}</destination>
@@ -160,6 +166,9 @@
 		<property name="length">
 			<value>0.5</value>
 		</property>
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{5758173c-1994-40a2-961a-2ebe42a430fa}</destination>
 			<destination>{566f487c-4bc3-496c-a0a5-47d29efc2ae6}</destination>
@@ -193,6 +202,9 @@
 	<object class="MultiSound" id="{49dddeb6-bcb9-4561-a19d-b54621379eb7}">
 		<property name="length">
 			<value>0.53000000000000003</value>
+		</property>
+		<property name="volume">
+			<value>-3</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{9e870e60-ba93-43cb-98ad-61f0ea9f6fc3}</destination>

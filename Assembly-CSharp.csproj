@@ -77,6 +77,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\OldScripts\Health.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Scripts\EventMusicSwitcher.cs" />
     <Compile Include="Assets\Scripts\OldScripts\MusicSwitch.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -118,6 +119,7 @@
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{65f1bd57-1180-4450-8b9c-abca2e34b366}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Group\{1fc19e3d-b26e-4224-871a-5915270008ac}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Return\{9253f761-c780-46c7-af03-416f936b52ae}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\VCA\{21f2cd04-6455-4db2-9b77-680926f4d738}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{4697f3a5-e07b-4bc9-bf13-b7a3065d4064}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\SandboxFolder\{22b423b3-ad38-4f32-9931-6cfa09221bdf}.xml" />
@@ -152,6 +154,7 @@
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{a7eb46ca-2c25-4db8-bf4c-671902694f61}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{33e42cb3-3071-4069-87ba-119a8709a0c4}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{5758f56e-c0ca-4768-ba8b-d8abd1b86ef2}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Snapshot\{01ae1ba8-d0d2-48bf-96f8-f15bdced1388}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\EffectPresetFolder\{076d13a8-d983-47d7-b8df-3318e4c4ba96}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -168,6 +171,7 @@
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Workspace.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\SnapshotGroup\{84a97d70-8a23-48dc-bdd9-2a7d5c17369d}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{54df3024-2414-44a8-a34d-b1906f0d0e11}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\VCA\{674242c7-0d85-4d18-95e2-ac1c96dee2be}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{c67f7fbf-16e4-476d-a229-83f960afbd2a}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Event\{e015a9d2-61b3-4805-9081-b7ab0bc2a4ab}.xml" />
@@ -181,8 +185,11 @@
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\EncodingSetting\{a5b5df4c-0d38-4822-a07c-11464173e8a8}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\ParameterPresetFolder\{984aed69-3238-4da7-977a-a42367f11ade}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\ParameterPreset\{ac6e697e-8a1e-487c-b4d6-0eb10d9da679}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\VCA\{4d2de421-676f-42a0-ad5e-fecaeb6564f8}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{cb2e0b2e-057d-47d8-81c2-267a45d492a1}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\VCA\{f677fa24-2eda-47d4-8bae-9eaf726b0a41}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{170466d2-b11c-465c-aea5-80de53a0c0ff}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\VCA\{d1527e2a-a511-4064-b207-bcb3eb570da9}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{fda9c20a-00f6-42f3-b7e7-1f180a2dd25d}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{da58cb67-a1d2-4490-bd11-061cf4ede9d6}.xml" />
@@ -199,6 +206,7 @@
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\EventFolder\{da10df8f-b79e-4292-882a-f8c67b9c2adc}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{61d09fbd-b3b2-4541-a4ed-4b6aa194aacb}.xml" />
+    <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Snapshot\{e0bc8ce5-73e0-4250-8377-f0daf1c2db43}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{a477fbc4-3002-4a72-a213-892750f6b102}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\Asset\{d9dabcfe-2dbe-4ab2-9b1f-3f171efae476}.xml" />
     <None Include="Assets\FMODMySounds\MyFMODProject2\Metadata\AudioFile\{5e58773e-af15-4231-8d2a-32056d904c7c}.xml" />

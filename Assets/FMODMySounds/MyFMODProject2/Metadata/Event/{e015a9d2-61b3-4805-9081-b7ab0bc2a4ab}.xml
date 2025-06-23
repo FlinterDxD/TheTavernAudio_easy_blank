@@ -55,6 +55,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{71665361-17d6-4d8d-b898-719e8cbf82cf}">
+		<relationship name="masters">
+			<destination>{674242c7-0d85-4d18-95e2-ac1c96dee2be}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{269e6c40-f302-420b-a8b3-4975333ff218}</destination>
 		</relationship>
@@ -208,6 +211,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{16fd0cf1-3850-4e91-88f6-69a50aa429a0}">
+		<property name="volume">
+			<value>6</value>
+		</property>
 		<property name="name">
 			<value>WoodJump</value>
 		</property>
@@ -326,9 +332,6 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{410f0053-a5cb-4f72-bb6e-544e4a97ad5e}">
-		<property name="start">
-			<value>0.080000000000000002</value>
-		</property>
 		<property name="length">
 			<value>0.60512740055708225</value>
 		</property>
