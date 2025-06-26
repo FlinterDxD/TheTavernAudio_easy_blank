@@ -61,9 +61,10 @@ public class Footsteps : MonoBehaviour
     void PlayFootsteps()
     {
         RaycastHit hit;
-
+        
         if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
         {
+            Debug.Log(hit.collider.name);
             if (hit.collider.CompareTag("Stone"))
             {
                 FootstepsSound = FMODUnity.RuntimeManager.CreateInstance(footstepsEvent);

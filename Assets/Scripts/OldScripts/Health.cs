@@ -20,12 +20,14 @@ public class Health : MonoBehaviour
         {
             if (tavernEmitter != null && tavernEmitter.IsPlaying() && !health)
             {
+                Debug.Log("In");
                 HealthSnap = FMODUnity.RuntimeManager.CreateInstance(healthSnapshot);
                 HealthSnap.start();
                 health = !health;
             }
             else if (tavernEmitter != null && tavernEmitter.IsPlaying() && health)
             {
+                Debug.Log("Out");
                 HealthSnap.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 HealthSnap.release();
                 health = !health;

@@ -3028,6 +3028,8 @@ GameObject:
   - component: {fileID: 613997989}
   - component: {fileID: 613997994}
   - component: {fileID: 613997995}
+  - component: {fileID: 613997996}
+  - component: {fileID: 613997997}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3244,11 +3246,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outsideSnapshot:
     Guid:
-      Data1: 28187560
-      Data2: 1220530386
-      Data3: 1542584470
-      Data4: -2011959844
-    Path: snapshot:/Outside
+      Data1: -255084566
+      Data2: 1324523467
+      Data3: -1020420472
+      Data4: -831794291
+    Path: snapshot:/Outside Snapshot
+--- !u!114 &613997996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f4ed2e91580f4459a40df16f56ba56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &613997997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa7b242fd310f747935e50999d1290e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tavernEmitter: {fileID: 410067824}
+  healthSnapshot:
+    Guid:
+      Data1: 1302577937
+      Data2: 1279022588
+      Data3: -167717242
+      Data4: 590976760
+    Path: snapshot:/Health
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,7 +4370,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 1.72
-  OverrideMaxDistance: 2.3935194
+  OverrideMaxDistance: 3.1965942
 --- !u!135 &974109492
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4995,7 +5029,7 @@ Transform:
   m_GameObject: {fileID: 1117358520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5183,7 +5217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a3acf8d75e1714f8433f67364d416a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 200
   roomCollider: {fileID: 1473744586}
   DoorsEvent:
     Guid:
@@ -5194,11 +5228,11 @@ MonoBehaviour:
     Path: event:/Doors
   insideRoomSnap:
     Guid:
-      Data1: -386208272
-      Data2: 1292102880
-      Data3: 281346965
-      Data4: 88119746
-    Path: snapshot:/RoomInside
+      Data1: 1043211529
+      Data2: 1210397209
+      Data3: 887194545
+      Data4: 10272109
+    Path: snapshot:/Reverb
 --- !u!1 &1225706416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5747,7 +5781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a3acf8d75e1714f8433f67364d416a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 200
   roomCollider: {fileID: 799114369}
   DoorsEvent:
     Guid:
@@ -5758,11 +5792,11 @@ MonoBehaviour:
     Path: event:/Doors
   insideRoomSnap:
     Guid:
-      Data1: -386208272
-      Data2: 1292102880
-      Data3: 281346965
-      Data4: 88119746
-    Path: snapshot:/RoomInside
+      Data1: 1043211529
+      Data2: 1210397209
+      Data3: 887194545
+      Data4: 10272109
+    Path: snapshot:/Reverb
 --- !u!1 &1473028129
 GameObject:
   m_ObjectHideFlags: 0
@@ -7792,7 +7826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a3acf8d75e1714f8433f67364d416a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 200
   roomCollider: {fileID: 1117358522}
   DoorsEvent:
     Guid:
@@ -7803,11 +7837,11 @@ MonoBehaviour:
     Path: event:/Doors
   insideRoomSnap:
     Guid:
-      Data1: -386208272
-      Data2: 1292102880
-      Data3: 281346965
-      Data4: 88119746
-    Path: snapshot:/RoomInside
+      Data1: 1043211529
+      Data2: 1210397209
+      Data3: 887194545
+      Data4: 10272109
+    Path: snapshot:/Reverb
 --- !u!1 &1874191278
 GameObject:
   m_ObjectHideFlags: 0

@@ -526,8 +526,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../Desktop/dfdffmodmusic/dfdffmodmusic.fspro
-  sourceBankPath: ../Desktop/dfdffmodmusic/Build
+  sourceProjectPath: ../Desktop/MyFMODProject2/MyFMODProject2.fspro
+  sourceBankPath: ../Desktop/MyFMODProject2/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1

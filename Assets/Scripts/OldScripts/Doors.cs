@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Doors : MonoBehaviour, IInteractable
 {
-    public float rotationSpeed = 90f; // Degrees per second
+    public float rotationSpeed = 360f; // Degrees per second
     bool doorsOpened = true;
     bool isRotating = false;
 
@@ -76,14 +76,14 @@ public class Doors : MonoBehaviour, IInteractable
         if (doorsOpened == true)
         {            
             DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
-            DoorsSound.setParameterByNameWithLabel("Doors", "Close");
+            DoorsSound.setParameterByNameWithLabel("OpenCloseParam", "Close");
             DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
             DoorsSound.start();
             //FMODUnity.RuntimeManager.PlayOneShot(DoorsEvent);
         }
         else
         {
-            DoorsSound.setParameterByNameWithLabel("Doors", "Open");
+            DoorsSound.setParameterByNameWithLabel("OpenCloseParam", "Open");
             DoorsSound.start();
             DoorsSound.release();
         }
